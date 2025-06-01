@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .video-player {
+      flex: 2;
+    }
+
+    .video-player iframe {
+      width: 100%;
+      height: 50vh;
+      border-radius: 10px;
+    }
+
+    .video-list {
+      flex: 1;
+      max-width: 350px;
+      overflow-y: auto;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .video-item {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .video-item img {
+      width: 120px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .video-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .video-info h4 {
+      font-size: 14px;
+      margin: 0 0 5px 0;
+      line-height: 1.2;
+    }
+
+    .video-info p {
+      margin: 0;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .video-list {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Video Player -->
+  <div class="video-player">
+    <iframe src="https://www.youtube.com/embed/acAVPGsIYjQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Scrollable List -->
+  <div class="video-list">
+    <div class="video-item">
+      <img src="https://img.youtube.com/vi/acAVPGsIYjQ/mqdefault.jpg" alt="Thumbnail">
+      <div class="video-info">
+        <h4>How to Change Number of Products on Shop Page</h4>
+        <p>August 12, 2024</p>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <img src="https://img.youtube.com/vi/tEsz2lyz2J8/mqdefault.jpg" alt="Thumbnail">
+      <div class="video-info">
+        <h4>How to Customize Product Cards on Shop Page</h4>
+        <p>August 12, 2024</p>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <img src="https://img.youtube.com/vi/3flbDqHrfAg/mqdefault.jpg" alt="Thumbnail">
+      <div class="video-info">
+        <h4>How Enable and Customize Welcome Popup</h4>
+        <p>August 12, 2024</p>
+      </div>
+    </div>
+
+    <div class="video-item">
+      <img src="https://img.youtube.com/vi/w0GUE7OaX0A/mqdefault.jpg" alt="Thumbnail">
+      <div class="video-info">
+        <h4>How to Modify Exit Popup - WordPress & WooCommerce</h4>
+        <p>August 12, 2024</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
