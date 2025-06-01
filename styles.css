@@ -312,7 +312,7 @@
 
   .highlight {
       font-size: 5rem;
-      font-weight: bolder;
+      font-weight: bold;
       /* background: linear-gradient(to right, #ef0060, #f4f1ef); */
       background: linear-gradient(to right, #ef0060, #ff6600);
       -webkit-background-clip: text;
@@ -448,7 +448,7 @@
 
   .highlight1 {
       font-size: 2rem;
-      font-weight: bolder;
+      font-weight: bold;
       background: linear-gradient(to right, #ef0060, #ff6600);
       -webkit-background-clip: text;
       background-clip: text;
@@ -456,7 +456,11 @@
       padding: 0 0;
 
   }
-
+/* .template:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+     
+  } */
   .container1 h1 {
       text-align: center;
       font-size: 2rem;
